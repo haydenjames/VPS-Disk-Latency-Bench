@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# VPS-Disk-Latency-Bench.sh
+# bench-io.sh
 # Latency-focused fio benchmark for VPS environments.
 # Safe defaults: uses a single test file, modest size, no package installs.
 # Requires: fio, dd, awk, sed, date
