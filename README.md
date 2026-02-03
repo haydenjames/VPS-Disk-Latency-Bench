@@ -12,7 +12,7 @@ Most VPS workloads (web servers, databases, applications) operate at queue depth
 
 **This script tests what actually matters: p99.9 latency at low queue depth.**
 
-Read more: [Disk I/O vs Latency: Why NVMe Benchmarks Lie](https://linuxblog.io/disk-io-vs-latency-why-nvme-benchmarks-lie/)
+Read more: [VPS IOPS vs. Latency: Why NVMe Benchmarks Lie](https://linuxblog.io/disk-io-vs-latency-why-nvme-benchmarks-lie/)
 
 ## Features
 
