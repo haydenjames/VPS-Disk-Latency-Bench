@@ -146,4 +146,4 @@ MIT
 
 ## Author
 
-[Hayden James](https://linuxblog.io) - Linux performance and VPS hosting insights.
+[Hayden James](https://linuxblog.io) - Linux systems analyst.
