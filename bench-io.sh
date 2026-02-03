@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # bench-io.sh
-# Latency-focused fio benchmark for VPS environments.
-# Safe defaults: uses a single test file, modest size, no package installs.
-# Requires: fio, dd, awk, sed, date
+# Latency-focused fio benchmarks for Linux VPS/systems.
+# fio randrw sweep for disks (4k/8k, qd 1/2/4, jobs 1/2, 70/30 and 50/50).
+# Outputs: JSON (raw fio output) and a text summary for quick review.
+# Requires: fio, dd, awk, grep, hostname, date. Optional: jq, bc, tput.
 #
 # GitHub: https://github.com/haydenjames/VPS-Disk-Latency-Bench/
 
