@@ -4,7 +4,7 @@ Latency-focused disk benchmarks for VPS environments.
 
 This script runs small-block mixed random I/O at low queue depths and light concurrency, then prints a **formatted results table** with color-coded latency assessments.
 
-![VPS Disk Latency Bench Screenshot](https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/refs/heads/main/example-screenshot.png)
+![VPS Disk Latency Bench Screenshot](https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/refs/heads/main/screenshot.png)
 
 ## Why latency, not IOPS?
 
@@ -12,7 +12,7 @@ Most VPS workloads (web servers, databases, applications) operate at queue depth
 
 **This script tests what actually matters: p99.9 latency at low queue depth.**
 
-Read more: [VPS IOPS vs. Latency: Why NVMe Benchmarks Lie](https://linuxblog.io/disk-io-vs-latency-why-nvme-benchmarks-lie/)
+Read more: [Disk I/O vs Latency: Why NVMe Benchmarks Lie](https://linuxblog.io/disk-io-vs-latency-why-nvme-benchmarks-lie/)
 
 ## Features
 
@@ -33,14 +33,14 @@ Read more: [VPS IOPS vs. Latency: Why NVMe Benchmarks Lie](https://linuxblog.io/
 
 ```bash
 # Download
-curl -O https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/main/vps-disk-latency-bench.sh
-chmod +x vps-disk-latency-bench.sh
+curl -O https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/main/bench-io.sh
+chmod +x bench-io.sh
 
 # Run with defaults (2GB file, 30s per test)
-./vps-disk-latency-bench.sh
+./bench-io.sh
 
 # Quick test (smaller file, shorter runtime)
-FILE_SIZE_GB=1 RUNTIME_SEC=10 ./vps-disk-latency-bench.sh
+FILE_SIZE_GB=1 RUNTIME_SEC=10 ./bench-io.sh
 ```
 
 ## Sample Output
@@ -92,13 +92,13 @@ Override defaults via environment variables:
 
 ```bash
 # Minimal test (fastest)
-FILE_SIZE_GB=1 RUNTIME_SEC=5 IODEPTHS="1" BS_LIST="4k" MIX_LIST="70" JOBS_LIST="1" ./vps-disk-latency-bench.sh
+FILE_SIZE_GB=1 RUNTIME_SEC=5 IODEPTHS="1" BS_LIST="4k" MIX_LIST="70" JOBS_LIST="1" ./bench-io.sh
 
 # Full test with larger file
-FILE_SIZE_GB=4 RUNTIME_SEC=60 ./vps-disk-latency-bench.sh
+FILE_SIZE_GB=4 RUNTIME_SEC=60 ./bench-io.sh
 
 # Custom output directory
-OUTPUT_DIR=/tmp/benchmarks ./vps-disk-latency-bench.sh
+OUTPUT_DIR=/tmp/benchmarks ./bench-io.sh
 ```
 
 ## Output Files
