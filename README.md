@@ -4,7 +4,7 @@ Latency-focused disk benchmarks for VPS environments.
 
 This script runs small-block mixed random I/O at low queue depths and light concurrency, then prints a **formatted results table** with color-coded latency assessments.
 
-![VPS Disk Latency Bench Screenshot](screenshot.png)
+![VPS Disk Latency Bench Screenshot](https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/refs/heads/main/example-screenshot.png)
 
 ## Why latency, not IOPS?
 
