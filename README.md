@@ -42,10 +42,9 @@ Optional:
 # Download
 curl -O https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/main/bench-io.sh
 chmod +x bench-io.sh
-
-# Run with defaults (2GB file, 30s per test)
-./bench-io.sh
-
+./bench-io.sh # Run with defaults (2GB file, 30s per test)
+```
+```bash
 # Quick test (smaller file, shorter runtime)
 FILE_SIZE_GB=1 RUNTIME_SEC=10 ./bench-io.sh
 ```
