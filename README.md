@@ -25,9 +25,16 @@ Read more: [VPS IOPS vs. Latency: Why NVMe Benchmarks Lie](https://linuxblog.io/
 
 ## Requirements
 
-- `fio` (required)
-- `bc` (optional, for color thresholds - falls back to awk)
-- `dd`, `awk`, `sed`, `date` (standard Linux tools)
+Required:
+- `fio`
+
+Standard tools (present on most Linux systems):
+- `dd`, `awk`, `sed`, `date`, `hostname`
+
+Optional:
+- `bc` (used for floating-point comparisons; falls back to awk)
+- `tput` (for colorized output, if supported)
+- `jq` (only needed if you want to manually inspect the raw JSON output)
 
 ## Quick Start
 
