@@ -6,6 +6,10 @@ This script runs small-block mixed random I/O at low queue depths and light conc
 
 ![VPS Disk Latency Bench Screenshot](https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/refs/heads/main/example-screenshot.png)
 
+<img src="https://raw.githubusercontent.com/haydenjames/VPS-Disk-Latency-Bench/refs/heads/main/example-screenshot.png"
+     alt="VPS Disk Latency Bench Screenshot"
+     style="max-width:100%; height:auto;">
+
 ## Why latency, not IOPS?
 
 Most VPS workloads (web servers, databases, applications) operate at queue depth 1-2 with single-threaded I/O. High IOPS numbers from synthetic benchmarks at qd32+ don't reflect real-world performance. 
