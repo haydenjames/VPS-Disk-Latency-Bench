@@ -10,6 +10,10 @@ This script runs small-block mixed random I/O at low queue depths and light conc
 
 Most VPS workloads (web servers, databases, applications) operate at queue depth 1-2 with single-threaded I/O. High IOPS numbers from synthetic benchmarks at qd32+ don't reflect real-world performance. 
 
+## Why VPS focused?
+
+This script works on any Linux system: dedicated servers, cloud instances, homelab boxes, local workstations. The VPS framing is about audience, not technical scope. VPS buyers are the ones most often misled by inflated IOPS numbers from providers running synthetic qd32 benchmarks on marketing pages. But anyone evaluating storage latency under realistic workloads will find the results useful. It's just fio with sensible parameters.
+
 **This script tests what actually matters: p99.9 latency at low queue depth.**
 
 Read more: [VPS IOPS vs. Latency: Why NVMe Benchmarks Lie](https://linuxblog.io/disk-io-vs-latency-why-nvme-benchmarks-lie/)
